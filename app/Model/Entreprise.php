@@ -1,10 +1,10 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Institut Model
+ * Entreprise Model
  *
  */
-class Institut extends AppModel {
+class Entreprise extends AppModel {
 
 /**
  * Validation rules
@@ -45,6 +45,16 @@ class Institut extends AppModel {
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'id_project' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

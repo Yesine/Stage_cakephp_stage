@@ -6,9 +6,39 @@
 			<?php echo h($institut['Institut']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Id Deposeur'); ?></dt>
+		<dt><?php echo __('Nom'); ?></dt>
 		<dd>
-			<?php echo h($institut['Institut']['id_deposeur']); ?>
+			<?php echo h($institut['Institut']['nom']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Logo'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['logo']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Adress'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['adress']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Telephone'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['telephone']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Siteweb'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['siteweb']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Email'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['email']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Id Project'); ?></dt>
+		<dd>
+			<?php echo h($institut['Institut']['id_project']); ?>
 			&nbsp;
 		</dd>
 	</dl>

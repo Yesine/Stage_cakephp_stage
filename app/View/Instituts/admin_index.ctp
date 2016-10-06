@@ -4,7 +4,13 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('id_deposeur'); ?></th>
+			<th><?php echo $this->Paginator->sort('nom'); ?></th>
+			<th><?php echo $this->Paginator->sort('logo'); ?></th>
+			<th><?php echo $this->Paginator->sort('adress'); ?></th>
+			<th><?php echo $this->Paginator->sort('telephone'); ?></th>
+			<th><?php echo $this->Paginator->sort('siteweb'); ?></th>
+			<th><?php echo $this->Paginator->sort('email'); ?></th>
+			<th><?php echo $this->Paginator->sort('id_project'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -12,7 +18,13 @@
 	<?php foreach ($instituts as $institut): ?>
 	<tr>
 		<td><?php echo h($institut['Institut']['id']); ?>&nbsp;</td>
-		<td><?php echo h($institut['Institut']['id_deposeur']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['nom']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['logo']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['adress']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['telephone']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['siteweb']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['email']); ?>&nbsp;</td>
+		<td><?php echo h($institut['Institut']['id_project']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $institut['Institut']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $institut['Institut']['id'])); ?>

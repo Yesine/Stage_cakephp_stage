@@ -4,7 +4,13 @@
 		<legend><?php echo __('Admin Edit Institut'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('id_deposeur');
+		echo $this->Form->input('nom');
+		echo $this->Form->input('logo');
+		echo $this->Form->input('adress');
+		echo $this->Form->input('telephone');
+		echo $this->Form->input('siteweb');
+		echo $this->Form->input('email');
+		echo $this->Form->input('id_project');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
